@@ -1,6 +1,6 @@
 {
   "name": "git2prov",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Unleash the potential of Git in the new W3C standard for provenance.",
   "bin": [
     "bin/git2prov",
@@ -26,24 +26,25 @@
   },
   "homepage": "http://git2prov.org/",
   "dependencies": {
-    "n3": "~0.2.3",
+    "base-x": "^3.0.5",
+    "express": "~3.4.8",
     "http-proxy": "~1.0.2",
-    "express": "~3.4.8"
+    "n3": "~0.2.3"
   },
   "devDependencies": {
-        "istanbul": "0.3.0",
-        "mocha": "~1.21.4",
-        "should": "~4.0.0",
-        "sinon": "~1.10.3",
-        "jshint": "~2.1.10",
-        "supertest": "~0.13.0",
-        "xunit-file": "~0.0.5"
+    "istanbul": "0.3.0",
+    "mocha": "~1.21.4",
+    "should": "~4.0.0",
+    "sinon": "~1.10.3",
+    "jshint": "~2.1.10",
+    "supertest": "~0.13.0",
+    "xunit-file": "~0.0.5"
   },
   "scripts": {
-        "test": "mocha --require test/support/env --reporter xunit-file -t 5000 --bail --check-leaks test/",
-        "hint": "./node_modules/jshint/bin/jshint lib test",
-        "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- -i -g Integration --require test/support/env --reporter spec --check-leaks test/",
-        "cov-jenkins": "istanbul report cobertura",
-        "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- -i -g Integration --require test/support/env --reporter spec --check-leaks test/"
+    "test": "mocha --require test/support/env --reporter xunit-file -t 5000 --bail --check-leaks test/",
+    "hint": "./node_modules/jshint/bin/jshint lib test",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- -i -g Integration --require test/support/env --reporter spec --check-leaks test/",
+    "cov-jenkins": "istanbul report cobertura",
+    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- -i -g Integration --require test/support/env --reporter spec --check-leaks test/"
   }
 }
