@@ -2,3 +2,6 @@ node_modules
 temp
 .idea
 coverage
+*.code-workspace
+cwa*.json
+package-lock.json
