@@ -1,6 +1,6 @@
 {
   "name": "git2prov",
-  "version": "0.2",
+  "version": "0.2.0",
   "description": "Unleash the potential of Git in the new W3C standard for provenance.",
   "bin": [
     "bin/git2prov",
@@ -27,7 +27,7 @@
   },
   "homepage": "http://git2prov.org/",
   "dependencies": {
-    "base-x": "^3.0.5",
+    "base-x": "^3.0.8",
     "express": "~3.4.8",
     "http-proxy": "~1.0.2",
     "n3": "~0.2.3",
