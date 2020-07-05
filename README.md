@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/vladistan/Git2PROV.svg?branch=feature%2Funit-tests)](https://travis-ci.org/vladistan/Git2PROV.svg?branch=feature%2Funit-tests)
 [![Coverage Status](https://img.shields.io/coveralls/vladistan/Git2PROV.svg)](https://coveralls.io/r/vladistan/Git2PROV)
 
-#Git2PROV
+# Git2PROV
 Check out our [One-minute Git2PROV tutorial on Vimeo](http://vimeo.com/70980809)
 
 For an in-depth description of this tool and its creation, we refer to the following paper:
@@ -11,7 +11,7 @@ For an in-depth description of this tool and its creation, we refer to the follo
 by Tom De Nies, Sara Magliacane, Ruben Verborgh, Sam Coppens, Paul Groth, Erik Mannens, and Rik Van de Walle
 Published in 2013 in the Poster and Demo Proceedings of the 12th International Semantic Web Conference.
 
-#Disclaimer and License
+# Disclaimer and License
 Git2PROV is a joint work of [Ghent University](http://www.ugent.be/) - [iMinds](http://www.iminds.be/) - [Multimedia Lab](http://mmlab.be/), and the [Data2Semantics](http://www.data2semantics.org/) project of the [VU University Amsterdam](http://www.vu.nl/) .
 
 The people involved are:
@@ -27,7 +27,7 @@ We chose to make Git2PROV open source under [GPL Version 3 license](http://www.g
 
 So in short, you are free to use and modify Git2PROV for non-commercial purposes, as long as you make your stuff open source as well and you properly credit us. This is most conveniently done by citing the paper mentioned above.
 
-#Installation
+# Installation
 
 Make sure you have node.js and git installed and in the system PATH variable. Then, run:
 ```
@@ -81,7 +81,7 @@ To start a proxy server:
 for example:
     node proxy.js 80 8905
 
-##Running as a service on a Linux/UNIX machine
+## Running as a service on a Linux/UNIX machine
 This script is used in combination with init.d. You could also modify it to work with upstart.
 
 Copy the startup script "git2prov" to your /etc/init.d directory:
