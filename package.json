@@ -1,6 +1,6 @@
 {
   "name": "git2prov",
-  "version": "0.1.3",
+  "version": "0.2",
   "description": "Unleash the potential of Git in the new W3C standard for provenance.",
   "bin": [
     "bin/git2prov",
@@ -8,7 +8,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/mmlab/Git2PROV.git"
+    "url": "git://github.com/onyame/Git2PROV.git"
   },
   "keywords": [
     "git",
@@ -18,11 +18,12 @@
   "author": [
     "Tom De Nies",
     "Sara Magliacane",
-    "Ruben Verborgh"
+    "Ruben Verborgh",
+    "Andreas Schreiber"
   ],
   "license": "GPLv3",
   "bugs": {
-    "url": "https://github.com/mmlab/Git2PROV/issues"
+    "url": "https://github.com/onyame/Git2PROV/issues"
   },
   "homepage": "http://git2prov.org/",
   "dependencies": {
