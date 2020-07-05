@@ -29,7 +29,8 @@
     "base-x": "^3.0.5",
     "express": "~3.4.8",
     "http-proxy": "~1.0.2",
-    "n3": "~0.2.3"
+    "n3": "~0.2.3",
+    "yargs": "^15.4.0"
   },
   "devDependencies": {
     "istanbul": "0.3.0",

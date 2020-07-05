@@ -37,11 +37,11 @@ Make sure you have node.js and git installed and in the system PATH variable. Th
 ## Converting a repository
 To convert a single repository, run:
 
-    git2prov git_url [serialization]
+    git2prov --giturl [url] --format [{PROV-JSON,PROV-O,PROV-XML,SVG}] --output [filename]
 
 For example:
 
-    git2prov git@github.com:RubenVerborgh/N3.js.git PROV-JSON
+    git2prov --giturl git@github.com:RubenVerborgh/N3.js.git --format PROV-JSON
 
 ## Running the server
 To run the server, use the following command:

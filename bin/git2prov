@@ -4,13 +4,17 @@ var path = require('path'),
     convert = require("../lib/git2provConverter").convert;
 
 // Parse arguments
-var args = process.argv.slice(2);
-if (args.length < 1 || args.length > 2) {
-  console.error('usage: git2prov git_url [{PROV-JSON,PROV-O,PROV-XML,SVG}]');
-  return process.exit(1);
-}
-var gitUrl = args[0],
-    serialization = args[1] || 'PROV-JSON',
+const usage = 'Usage: $0 --giturl [url] --format [{PROV-JSON,PROV-O,PROV-XML,SVG}] --output [filename]';
+
+var argv = require('yargs')
+  .usage(usage)
+  .demandOption(['giturl'])
+  .default('format', 'PROV-JSON')
+  .default('output', 'stdout')
+  .argv;
+
+var gitUrl = argv.giturl,
+    serialization = argv.format,
     tempDir = path.join(os.tmpdir(), 'git2prov', process.pid.toString()),
     requestUrl = 'http://localhost/',
     options = {};
@@ -19,5 +23,10 @@ var gitUrl = args[0],
 convert(gitUrl, serialization, tempDir, requestUrl, options, function (prov, error) {
   if (error)
     throw error;
-  console.log(prov);
+  if (argv.output == 'stdout') {
+    console.log(prov);
+  } else {
+    outputfile = require('fs');
+    outputfile.writeFile(argv.output, prov);
+  }
 });
