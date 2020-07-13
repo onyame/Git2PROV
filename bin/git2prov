@@ -3,6 +3,9 @@ var path = require('path'),
     os = require('os'),
     convert = require("../lib/git2provConverter").convert;
 
+var pjson = require('../package.json');
+// console.log("version " + pjson.version);
+
 // Parse arguments
 const usage = 'Usage: $0 --giturl [url] --format [{PROV-JSON,PROV-O,PROV-XML,SVG}] --output [filename]';
 
