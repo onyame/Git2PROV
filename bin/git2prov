@@ -1,7 +1,8 @@
 #!/usr/bin/env node
+
 var path = require('path'),
-    os = require('os'),
-    convert = require("../lib/git2provConverter").convert;
+  os = require('os'),
+  convert = require("../lib/git2provConverter").convert;
 
 var pjson = require('../package.json');
 // console.log("version " + pjson.version);
@@ -17,10 +18,10 @@ var argv = require('yargs')
   .argv;
 
 var gitUrl = argv.giturl,
-    serialization = argv.format,
-    tempDir = path.join(os.tmpdir(), 'git2prov', process.pid.toString()),
-    requestUrl = 'http://localhost/',
-    options = {};
+  serialization = argv.format,
+  tempDir = path.join(os.tmpdir(), 'git2prov', process.pid.toString()),
+  requestUrl = 'http://localhost/',
+  options = {};
 
 // Output the provenance
 convert(gitUrl, serialization, tempDir, requestUrl, options, function (prov, error) {
