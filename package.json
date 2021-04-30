@@ -28,8 +28,8 @@
   "homepage": "http://git2prov.org/",
   "dependencies": {
     "base-x": "^3.0.8",
-    "express": "~3.4.8",
-    "http-proxy": "~1.0.2",
+    "express": ">=3.11.0",
+    "http-proxy": ">=1.18.1",
     "n3": "~0.2.3",
     "yargs": "^15.4.0"
   },
